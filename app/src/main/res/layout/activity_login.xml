@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#00b386"
+    android:id="@+id/LoginContainer"
+    tools:context="com.example.zisis.sdy61_ge4.LoginActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Fragment_Place">
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Login with Google credentials"
+        android:id="@+id/Login"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textColor="#0d7bb6" />
+
+   
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="User Name"
+        android:ems="10"
+        android:id="@+id/usr"
+        android:layout_below="@+id/Login"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:ems="10"
+        android:id="@+id/pass"
+        android:layout_below="@+id/usr"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ΕΠΟΜΕΝΟ"
+        android:id="@+id/next"
+        android:layout_below="@+id/pass"
+        android:layout_above="@+id/btnLogIn"
+        android:layout_centerHorizontal="true">
+
+        </Button>
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/btnLogIn"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_marginBottom="87dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="28sp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_alignParentStart="true">
+
+    </com.google.android.gms.common.SignInButton>
+
+
+</RelativeLayout>

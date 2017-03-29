@@ -1,0 +1,48 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/WebImageViwerFragment"
+    android:background="#00b386"
+    tools:context="com.example.zisis.sdy61_ge4.WebImageViewerFragment"
+
+
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:text="Random Image Preview"
+        android:textAlignment="center"
+        android:id="@+id/textView"
+        android:textSize="20sp"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:textColor="#000000"
+        />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:background="#00b386"
+        android:id="@+id/imageView"
+        android:layout_gravity="center" />
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="ΑΛΛΗ ΕΙΚΟΝΑ"
+        android:id="@+id/nextImage"
+        android:layout_gravity="left|bottom" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="ΕΠΟΜΕΝΟ"
+        android:id="@+id/nextToGeo"
+        android:layout_gravity="right|bottom" />
+
+
+</FrameLayout>
